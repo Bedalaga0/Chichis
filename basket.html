@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магаз Ромка плюс Вовка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="inc-style/inc-style.css">
+    <link rel="stylesheet" href="css/accordion.css">
+</head>
+<body>
+    <header class="header">
+        <div class="div_container bobo">
+            <img src="img/абизяна.png" class="logo">
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Главная</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">О товарах</a></li>
+                    <li class="nav_item"><a href="#save" class="nav_link">Скачать</a></li>
+                    <li class="nav_item"><a href="#gall" class="nav_link">Галерея</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Связи  </a></li>
+                </ul>
+                <div class="burger" onclick="burger_click()">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                </div>
+            </nav>
+            <button class="btn_menu" id="btn-menu">Mеню</button>
+            <div class="header_menu" id="menu">
+                <ul class="header_list">
+                    <li class="header_item">Вход</li>
+                    <li class="header_item">Корзина</li>
+                    <li class="header_item">Акции</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <div class="container">
+                <h1 class="products_tittle">Корзина</h1>
+                <ul class="products__list">
+                    <li class="product__item">
+                        <p class="products_none">Пусто</p>
+                    </li>
+                </ul>
+                <button class="adder" onclick="update()">Добавить к корзину</button>
+            </div>
+        </section>
+        <div class="basket">
+                <button class="button_basket"><a href="" class="bsk"><img src="img/корзина.png" alt="" class="basket_img"></a></button>
+                <p class="price">0</p>
+        </div>
+    </main>
+      <script src="inc-script/inc-script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="menu/scripts.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/script-burger.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магаз Ромка плюс Вовка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="inc-style/inc-style.css">
+    <link rel="stylesheet" href="css/accordion.css">
+</head>
+<body>
+    <header class="header">
+        <div class="div_container bobo">
+            <img src="img/абизяна.png" class="logo">
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link">Главная</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">О товарах</a></li>
+                    <li class="nav_item"><a href="#save" class="nav_link">Скачать</a></li>
+                    <li class="nav_item"><a href="#gall" class="nav_link">Галерея</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Связи  </a></li>
+                </ul>
+                <div class="burger" onclick="burger_click()">
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line"></div>
+                </div>
+            </nav>
+            <button class="btn_menu" id="btn-menu">Mеню</button>
+            <div class="header_menu" id="menu">
+                <ul class="header_list">
+                    <li class="header_item">Вход</li>
+                    <li class="header_item">Корзина</li>
+                    <li class="header_item">Акции</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="itc-slider" data-slider="itc-slider">
+        <div class="itc-slider__wrapper">
+          <div class="itc-slider__items">
+            <div class="itc-slider__item">
+                <section class="shop">
+                    <div class="container">
+                        <div class="wrapper_img">
+                             <img src="img/чичис.jpg" class="shop_img">
+                         </div>
+                        <div class="shop_content">
+                            <h1 class="shop_title" id="chichis">"Чичис"  1999 ₽</h1>
+                            <div class="accordion" id="accordion-1">
+                                <div class="accordion__item">
+                                    <h1 class="accordion__header">О товаре</h1>
+                                    <div class="accordion__body">
+                                        <p class="shop_desk">Плюшевая игрушка Чичис, созданная в целях украсить твой дом. Я могу сидеть на полке или спать с тобой в обнимку. Выполнен из эстетически приятных материалов.
+                            Присоединяйся к нашему коммьюнити!</p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper_btn">
+                                <button class="shop_btn" type="button" id="btn1" onclick="buy('btn1')">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="itc-slider__item">
+                <section class="shop">
+                    <div class="container">
+                        <div class="wrapper_img">
+                             <img src="img/гусь2.png" class="shop_img">
+                         </div>
+                        <div class="shop_content">
+            <h1 class="shop_title"> "Леша"  3999 ₽</h1>
+            <div class="accordion" id="accordion-2">
+                <div class="accordion__item">
+                    <h1 class="accordion__header">О товаре</h1>
+                    <div class="accordion__body">
+                        <p class="shop_desk">Плюшевая игрушка Леша, созданная в целях украсить твой дом. Я могу лежать на кровати или спать с тобой в обнимку. Выполнен из эстетически приятных материалов.
+                            Присоединяйся к нашему коммьюнити!</p> 
+                    </div>
+                </div>
+                            <div class="wrapper_btn">
+                                <button class="shop_btn" type="button" id="btn2" onclick="buy('btn2')">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="itc-slider__item">
+                <section class="shop">
+                    <div class="container">
+                        <div class="wrapper_img">
+                             <img src="img/николай.png" class="shop_img">
+                         </div>
+                        <div class="shop_content">
+            <h1 class="shop_title">"Николай"  999 ₽</h1>
+            <div class="accordion" id="accordion-3">
+                <div class="accordion__item">
+                    <h1 class="accordion__header">О товаре</h1>
+                    <div class="accordion__body">
+                        <p class="shop_desk">Плюшевая игрушка Николай, созданная в целях украсить твой дом. Я могу сидеть на полке или лежать у тебя на столе. Выполнен из эстетически приятных материалов.
+                            Присоединяйся к нашему коммьюнити!</p>
+                        </div>
+                    </div>
+                           
+                            <div class="wrapper_btn">
+                                <button class="shop_btn" type="button" id="btn3" onclick="buy('btn3')">Купить</button>
+                    </div>
+                </section>
+            </div>
+          </div>
+        </div>
+        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+        <button class="itc-slider__btn itc-slider__btn_prev"></button>
+        <button class="itc-slider__btn itc-slider__btn_next"></button>
+      </div>
+      <div class="itc-slider" data-slider="itc-slider">
+        <div class="itc-slider__wrapper">
+          <div class="itc-slider__items">
+            <div class="itc-slider__item">
+                <div class="map-google">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d867496.5520368317!2d28.650927647678575!3d53.08534071416905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d73175c3fd0429%3A0xf3bec40860391cf2!2z0JHQvtCx0YDRg9C50YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sru!4v1684533279617!5m2!1sru!2sru" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="itc-slider__item">
+                <div class="map-yandex">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3067c68406daa13d910cc133703c977f3b586d3b577be8bf04c080c62a7c0b1d&amp;source=constructor" width="900" height="500" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+        <button class="itc-slider__btn itc-slider__btn_prev"></button>
+        <button class="itc-slider__btn itc-slider__btn_next"></button>
+      </div>
+      <section class="video">
+        <video autoplay loop muted class="bgvideo" id="v">
+            <source src="video/космос футаж.mp4" type="">
+        </video>
+        <div class="video_content">
+            <h3 class="video_title">Космоc</h3>
+            <p>Это космос. Круто. Кайф. Балдеж.</p>
+            <button class="button_video" id="pause" onclick="stop()">▐▐</button>
+            <button class="button_video" id="mute" onclick="mute1()">🔊</button>
+            <button class="button_video" id="next" onclick="next1()">⏮</button>
+            <button class="button_video" id="back" onclick="back1()">⏭</button>
+        </div>
+      </section>
+        <div class="basket">
+                <button class="button_basket"><a href="basket.html" class="bsk"><img src="img/корзина.png" alt="" class="basket_img"></a></button>
+                <p class="price">0</p>
+        </div>
+    </main>
+      <script src="inc-script/inc-script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="menu/scripts.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/script-burger.js"></script>
+    <script src="scripts/player.js"></script>
+</body>
+</html>
